@@ -1,0 +1,24 @@
+title 0.5: Single Page App
+
+note over selain:
+Sivun lataus
+end note
+
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/span
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+palvelin-->selain: spa.js
+
+note over selain:
+Selain hakee JSON-datan palvelimelta
+end note
+
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: data.json
+
+note over selain:
+Selain renderöi muistiinpanot näytölle
+end note
+

@@ -1,0 +1,10 @@
+title 0.6: Uusi muistiinpano(SPA)
+
+note over selain:
+Käyttäjä luo uuden muistiinpanon, 
+se siirtyy spa.js-dataan, joka päivittyy sivulle.
+end note
+
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+palvelin-->selain: data.json with "new_note_spa"
+
